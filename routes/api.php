@@ -8,3 +8,4 @@ use App\Http\Controllers\API\FileController;
 
 Route::get('/uploads', [FileController::class, 'index']);
 Route::post('/uploads', [FileController::class, 'upload']);
+Route::get('/download/{fileName}', [FileController::class, 'download']);
