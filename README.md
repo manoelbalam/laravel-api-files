@@ -1,5 +1,6 @@
 configure database on .env
 php artisan install:api
+php artisan storage:link
 php artisan migrate
 php atisan serve
 
